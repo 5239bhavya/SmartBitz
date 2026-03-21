@@ -1,0 +1,43 @@
+/* App styles - Tailwind handles most styling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Selection color */
+::selection {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Scrollbar styling for modern browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.5);
+}

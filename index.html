@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect + non-blocking font load (replaces render-blocking CSS @import) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    />
+    <title>SmartBiz AI – AI-Powered Small Business & Startup Advisor</title>
+    <meta
+      name="description"
+      content="Get personalized AI guidance to start and grow your small business. From idea selection to marketing strategy – complete startup planning for Indian entrepreneurs."
+    />
+    <meta
+      name="keywords"
+      content="business planning, startup advisor, AI business guide, small business India, entrepreneurship"
+    />
+
+    <meta
+      property="og:title"
+      content="SmartBiz AI – AI-Powered Business Advisor"
+    />
+    <meta
+      property="og:description"
+      content="Start your business journey with AI-powered guidance. Get personalized business plans, investment estimates, and growth strategies."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "dark") document.documentElement.classList.add("dark");
+          else if (t === "light")
+            document.documentElement.classList.remove("dark");
+          else if (
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          )
+            document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

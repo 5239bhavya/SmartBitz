@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student's Lab Task Form - StartupDesk</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 20mm;
+      }
+
+      body {
+        font-family: "Times New Roman", serif;
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 20px;
+        background: white;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .college-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .sub-header {
+        font-size: 14px;
+        margin: 5px 0;
+      }
+
+      .form-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 20px 0;
+        text-decoration: underline;
+      }
+
+      .info-section {
+        margin: 20px 0;
+      }
+
+      .info-row {
+        margin: 10px 0;
+        display: flex;
+      }
+
+      .info-label {
+        font-weight: bold;
+        width: 150px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        border: 2px solid black;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f0f0f0;
+        font-weight: bold;
+      }
+
+      .week-col {
+        width: 80px;
+        text-align: center;
+      }
+
+      .sign-col {
+        width: 100px;
+        text-align: center;
+      }
+
+      .signature-section {
+        margin-top: 50px;
+      }
+
+      .signature-line {
+        margin-top: 30px;
+      }
+
+      @media print {
+        body {
+          padding: 0;
+        }
+
+        .no-print {
+          display: none;
+        }
+      }
+
+      .print-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px 30px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .print-button:hover {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-button no-print" onclick="window.print()">
+      🖨️ Print / Save as PDF
+    </button>
+
+    <div class="header">
+      <div class="college-name">
+        G H PATEL COLLEGE OF ENGINEERING AND TECHNOLOGY
+      </div>
+      <div class="sub-header">(A CONSTITUENT COLLEGE OF CVM UNIVERSITY)</div>
+      <div class="sub-header">DEPARTMENT OF IT, A.Y. 2025-26, EVEN TERM</div>
+      <div class="sub-header">MINI PROJECT (202040601)</div>
+      <div class="form-title">STUDENT'S LAB TASK FORM</div>
+    </div>
+
+    <div class="info-section">
+      <div class="info-row">
+        <span class="info-label">Enrollment No. :</span>
+        <span>_____________________</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Name :</span>
+        <span>_____________________</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Branch :</span>
+        <span>Information Technology</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Project Definition :</span>
+        <span
+          ><strong
+            >StartupDesk - AI-Powered Business Planning & Management
+            Platform</strong
+          ></span
+        >
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="week-col">Week No</th>
+          <th>List of activities performed by Student</th>
+          <th class="sign-col">Sign</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="week-col">1</td>
+          <td>
+            Project initialization, requirement analysis, and technology stack
+            selection (React, TypeScript, Vite, Flask, Supabase). Created
+            project structure and set up development environment.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">2</td>
+          <td>
+            Designed and implemented database schema in Supabase with tables for
+            users, business plans, recommendations, and suppliers. Set up
+            Row-Level Security (RLS) policies for data protection.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">3</td>
+          <td>
+            Developed authentication system using Supabase Auth. Created login,
+            signup, and password reset functionality with email verification.
+            Implemented protected routes and session management.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">4</td>
+          <td>
+            Built Flask backend API with endpoints for business plan generation,
+            idea suggestions, and supplier recommendations. Integrated Google
+            Gemini AI for intelligent content generation.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">5</td>
+          <td>
+            Developed responsive UI components using React, shadcn/ui, and
+            Tailwind CSS. Created HeroSection, FeaturesSection, and navigation
+            components with premium design aesthetics.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">6</td>
+          <td>
+            Implemented AI-powered SmartBiz Agent chatbot for conversational
+            onboarding. Integrated chat history, session management, and
+            real-time AI responses using streaming.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">7</td>
+          <td>
+            Created business idea recommendation system with AI-generated
+            suggestions based on user budget, location, and interests.
+            Implemented idea selection and business plan generation flow.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">8</td>
+          <td>
+            Developed comprehensive business dashboard with sales tracking, cash
+            flow management, advertising campaigns, and milestone tracking.
+            Integrated Recharts for data visualization.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">9</td>
+          <td>
+            Integrated UDYAM/MSME government API for real-time supplier data.
+            Implemented AI-powered supplier comparison feature with pricing and
+            contact details.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">10</td>
+          <td>
+            Built B2B marketplace with separate tabs for finished goods and raw
+            materials. Implemented verified badges, contact actions, and premium
+            UI design for listing cards.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">11</td>
+          <td>
+            Implemented business plan PDF export functionality using jsPDF.
+            Created phase-based startup guidance system with actionable insights
+            and AI recommendations.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+        <tr>
+          <td class="week-col">12</td>
+          <td>
+            Final testing, bug fixes, and deployment preparation. Optimized
+            performance, implemented error handling, and created comprehensive
+            documentation. Project demonstration and presentation.
+          </td>
+          <td class="sign-col"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="signature-section">
+      <div class="signature-line">
+        <strong>Signature:</strong> _____________________<br />
+        <span style="margin-left: 80px">(Student)</span>
+      </div>
+    </div>
+
+    <script>
+      // Auto-print dialog on load (optional)
+      // window.onload = function() { window.print(); }
+    </script>
+  </body>
+</html>

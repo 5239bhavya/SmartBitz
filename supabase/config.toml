@@ -1,0 +1,13 @@
+project_id = "omtgpcjbhefrrebkucko"
+
+[functions.generate-recommendations]
+verify_jwt = false
+
+[functions.generate-business-plan]
+verify_jwt = false
+
+[functions.get-suppliers]
+verify_jwt = false
+
+[functions.suggest-ideas]
+verify_jwt = false

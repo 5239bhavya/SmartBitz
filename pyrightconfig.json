@@ -1,0 +1,25 @@
+{
+  "pythonVersion": "3.10",
+  "pythonPlatform": "Windows",
+  "pythonPath": "C:/Users/91931/AppData/Local/Programs/Python/Python310/python.exe",
+  "include": ["backend"],
+  "exclude": ["node_modules", ".git", "__pycache__"],
+  "extraPaths": [
+    "C:/Users/91931/AppData/Local/Programs/Python/Python310/lib/site-packages",
+    "C:/Users/91931/AppData/Roaming/Python/Python310/site-packages",
+    "C:/Users/91931/AppData/Local/Programs/Python/Python310/lib",
+    "backend"
+  ],
+  "typeCheckingMode": "basic",
+  "reportMissingModuleSource": "none",
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportAttributeAccessIssue": "none",
+  "reportIndexIssue": "none",
+  "reportOperatorIssue": "none",
+  "reportArgumentType": "none",
+  "useLibraryCodeForTypes": true
+}

@@ -1,0 +1,4 @@
+{
+  "error": "Failed to fetch leaderboard",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Gcet_Mini_project\\startupdesk-main\\startupdesk-main\\backend\\app.py\", line 1795, in get_leaderboard\n    .execute()\n  File \"C:\\Users\\91931\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\postgrest\\_sync\\request_builder.py\", line 53, in execute\n    raise APIError(dict(json_obj))\npostgrest.exceptions.APIError: {'message': 'column user_profiles.email does not exist', 'code': '42703', 'hint': None, 'details': None}\n"
+}
