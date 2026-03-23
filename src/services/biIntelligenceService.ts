@@ -8,7 +8,7 @@ import type {
     RecipeBreakdown,
 } from "@/types/productIntelligence";
 
-const BASE = "http://127.0.0.1:5000/api/bi";
+const BASE = "/api/bi";
 const CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
 
 // ── localStorage cache helpers ────────────────────────────────────────────────

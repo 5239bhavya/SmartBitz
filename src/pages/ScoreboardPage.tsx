@@ -174,7 +174,7 @@ const ScoreboardPage = () => {
   const loadLeaderboard = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch("http://127.0.0.1:5000/api/get-leaderboard?limit=50");
+      const response = await fetch("/api/get-leaderboard?limit=50");
       if (!response.ok) throw new Error("Failed to load leaderboard");
       const data = await response.json();
       setLeaderboard(data.leaderboard || []);

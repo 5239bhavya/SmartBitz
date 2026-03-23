@@ -42,7 +42,7 @@ export const MarketTrendsBoard = () => {
         setIsLoading(true);
         setError(null);
         try {
-            const response = await fetch(`http://127.0.0.1:5000/api/market-trends?city=${encodeURIComponent(cityName)}`);
+            const response = await fetch(`/api/market-trends?city=${encodeURIComponent(cityName)}`);
             if (!response.ok) throw new Error("Failed to fetch trends");
 
             const result = await response.json();

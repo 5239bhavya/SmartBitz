@@ -51,7 +51,7 @@ const RecommendationsPage = () => {
       // TEMPORARY: Using backend endpoint instead of Supabase Edge Function
       // TODO: Switch back to Edge Function once deployed
       const response = await fetch(
-        "http://localhost:5000/api/recommendations",
+        "/api/recommendations",
         {
           method: "POST",
           headers: {
