@@ -127,7 +127,15 @@ supabase functions deploy suggest-ideas
 
 ---
 
-## 🤝 Contributing
+### Contributors
+
+| Name | GitHub | Role |
+|------|--------|------|
+| **Bhavya Patel** | [@5239bhavya](https://github.com/5239bhavya) | Backend & AI Core - SmartBiz Agent, Budget Prediction, Groq/LLaMA Integration, Flask API |
+| **Dev Patel** | [@dp757306](https://github.com/dp757306) | Frontend Core & Dashboard - AI Chat UI, 9-Tab Dashboard, Cash Flow Tracker, Supabase Integration |
+
+
+# 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Build incredible things to help the world's next great founders.
 
 ## 📄 License
