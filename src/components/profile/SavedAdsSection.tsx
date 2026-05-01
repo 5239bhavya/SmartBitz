@@ -53,7 +53,7 @@ export function SavedAdsSection({ planId, userId }: SavedAdsSectionProps) {
   const loadAds = async () => {
     setIsLoading(true);
     try {
-      let url = `http://127.0.0.1:5000/api/get-plan-ads/${planId || "all"}?user_id=${userId}`;
+      let url = `/api/get-plan-ads/${planId || "all"}?user_id=${userId}`;
 
       const response = await fetch(url);
 
@@ -95,7 +95,7 @@ export function SavedAdsSection({ planId, userId }: SavedAdsSectionProps) {
   const handleDeleteAd = async (adId: string) => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/api/delete-plan-ad/${adId}?user_id=${userId}`,
+        `/api/delete-plan-ad/${adId}?user_id=${userId}`,
         { method: "DELETE" },
       );
 
@@ -112,7 +112,7 @@ export function SavedAdsSection({ planId, userId }: SavedAdsSectionProps) {
   const handleToggleFavorite = async (adId: string) => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/api/toggle-favorite-ad/${adId}?user_id=${userId}`,
+        `/api/toggle-favorite-ad/${adId}?user_id=${userId}`,
         { method: "PATCH" },
       );
 

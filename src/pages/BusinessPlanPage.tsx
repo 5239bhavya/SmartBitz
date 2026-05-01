@@ -178,7 +178,7 @@ const BusinessPlanPage = () => {
 
     try {
       // TEMPORARY: Using backend endpoint instead of Supabase Edge Function due to 401 API Gateway Error
-      const res = await fetch("http://127.0.0.1:5000/api/bi/generate-business-plan", {
+      const res = await fetch("/api/bi/generate-business-plan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

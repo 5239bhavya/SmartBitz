@@ -488,7 +488,7 @@ export function AdPostGenerator({
 
   const loadExistingAds = async () => {
     try {
-      const res = await fetch(`http://127.0.0.1:5000/api/get-plan-ads/${planId}?user_id=${userId}`);
+      const res = await fetch(`/api/get-plan-ads/${planId}?user_id=${userId}`);
       const data = await res.json();
       if (data.success) setExistingAds(data.ads || []);
     } catch { /* silent */ }
@@ -500,7 +500,7 @@ export function AdPostGenerator({
     }
     setIsGenerating(true);
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/generate-ad-posts", {
+      const res = await fetch("/api/generate-ad-posts", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
@@ -558,7 +558,7 @@ export function AdPostGenerator({
         if (blob) { fd.append(`image_${imgCount}`, blob, `ad_${imgCount}.png`); imgCount++; }
       }
 
-      const res = await fetch("http://127.0.0.1:5000/api/save-plan-ads", { method: "POST", body: fd });
+      const res = await fetch("/api/save-plan-ads", { method: "POST", body: fd });
       const data = await res.json();
       if (data.success) {
         toast.success("Ads saved!");
@@ -582,14 +582,14 @@ export function AdPostGenerator({
 
   const handleDelete = async (adId: string) => {
     try {
-      await fetch(`http://127.0.0.1:5000/api/delete-plan-ad/${adId}?user_id=${userId}`, { method: "DELETE" });
+      await fetch(`/api/delete-plan-ad/${adId}?user_id=${userId}`, { method: "DELETE" });
       toast.success("Deleted"); await loadExistingAds();
     } catch { toast.error("Failed to delete"); }
   };
 
   const handleFave = async (adId: string) => {
     try {
-      await fetch(`http://127.0.0.1:5000/api/toggle-favorite-ad/${adId}?user_id=${userId}`, { method: "PATCH" });
+      await fetch(`/api/toggle-favorite-ad/${adId}?user_id=${userId}`, { method: "PATCH" });
       await loadExistingAds();
     } catch { toast.error("Failed"); }
   };

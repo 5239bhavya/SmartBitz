@@ -124,7 +124,7 @@ const MarketplacePage = () => {
       // 2. Fetch government listings from Flask backend
       try {
         const response = await fetch(
-          "http://127.0.0.1:5000/api/marketplace/gov-listings",
+          "/api/marketplace/gov-listings",
         );
         if (response.ok) {
           const govData = await response.json();
